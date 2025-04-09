@@ -1,0 +1,39 @@
+#:kivy 2.1.0
+
+<TodoScreen>:
+    orientation: 'vertical'
+    padding: dp(10)
+    spacing: dp(10)
+
+    task_input: task_input
+    task_container: task_container
+
+    Label:
+        text: 'To-Do List'
+        font_size: dp(24)
+        size_hint_y: None
+        height: dp(50)
+
+    TextInput:
+        id: task_input
+        hint_text: 'Enter a task'
+        multiline: False
+        size_hint_y: None
+        height: dp(40)
+
+    Button:
+        text: 'Add Task'
+        size_hint_y: None
+        height: dp(50)
+        on_press: root.add_task()
+
+    ScrollView:
+        do_scroll_x: False
+        do_scroll_y: True
+
+        GridLayout:
+            id: task_container
+            cols: 1
+            spacing: dp(10)
+            size_hint_y: None
+            height: self.minimum_height
