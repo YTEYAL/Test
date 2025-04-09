@@ -6,10 +6,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = To-Do List
 
 # (str) Package name
-package.name = myapp
+package.name = todolist
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -74,8 +74,8 @@ orientation = portrait
 #
 # author = © Copyright Info
 
-# Kivy version to use
-osx.kivy_version = 2.2.0
+#  version to use
+osx.kivy_version = 2.3.0
 
 #
 # Android specific
